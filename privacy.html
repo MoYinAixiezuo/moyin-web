@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>墨引 · 隐私政策</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; background: #f4efe6; color: #2a2119; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; line-height: 1.9; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 56px 24px 80px; }
+  .brand { font-size: 13px; letter-spacing: .22em; color: #9b5a43; font-weight: 600; }
+  h1 { font-size: 34px; margin: 10px 0 6px; letter-spacing: .04em; }
+  .meta { color: #7d6d5c; font-size: 13px; margin-bottom: 34px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; padding-bottom: 7px; border-bottom: 1px solid #ddd1bf; }
+  p, li { font-size: 14px; }
+  ul { padding-left: 22px; }
+  .box { background: #fffaf2; border: 1px solid #e1d3bf; border-radius: 10px; padding: 16px 18px; margin: 18px 0; }
+  code { background: #eee4d5; padding: 2px 5px; border-radius: 4px; font-size: 13px; }
+  a { color: #9b4b35; }
+  footer { margin-top: 48px; color: #85735f; font-size: 12px; border-top: 1px solid #ddd1bf; padding-top: 18px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #17120d; color: #eee5d7; }
+    h1 { color: #f4ead8; }
+    .brand, a { color: #d9906f; }
+    .meta, footer { color: #a99984; }
+    h2 { border-color: #3a2f24; }
+    .box { background: #211a13; border-color: #3a2f24; }
+    code { background: #2b2219; }
+    footer { border-color: #3a2f24; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">MOYIN STUDIO</div>
+  <h1>墨引 · 隐私政策</h1>
+  <div class="meta">生效日期：2026 年 11 月 7 日　·　适用产品：墨引 Windows 桌面版</div>
+
+  <div class="box">
+    简要说明：墨引是本地优先的写作工具。你的作品和正文默认只保存在自己的电脑；只有你主动使用账号、公共资料库、跨设备传输、AI 或图片生成时，才会发生相应的网络传输。
+  </div>
+
+  <h2>1. 我们是谁</h2>
+  <p>墨引由“墨引开发团队”开发和维护。本政策说明墨引桌面版如何处理你的信息。</p>
+  <p>隐私与数据问题请联系：<a href="mailto:1401298115@qq.com">1401298115@qq.com</a></p>
+
+  <h2>2. 本地数据</h2>
+  <p>以下内容默认保存在你的电脑本地 <code>MoyinData</code> 目录，不会自动上传：</p>
+  <ul>
+    <li>作品、卷章、正文、设定、人物、世界观、时间线、伏笔</li>
+    <li>章节卡片、写作偏好、编辑器字体/背景/行距</li>
+    <li>你填写的 AI / 图片 API 配置和 API Key</li>
+    <li>本地自动备份和章节历史</li>
+  </ul>
+  <p>只有当你在“跨设备传输”中勾选包含 API 配置时，密钥才会进入加密传输包。</p>
+
+  <h2>3. 账号与公开资料</h2>
+  <p>当你注册或登录墨引账号时，我们会通过 Supabase 处理：</p>
+  <ul>
+    <li>邮箱地址（账号唯一凭证）</li>
+    <li>昵称、头像、个签、性别、生日、国家/地区（均为选填）</li>
+    <li>你主动发布到公共资料库的标题、简介、正文、等级阶梯和作者昵称</li>
+    <li>你提交的举报记录</li>
+  </ul>
+  <p>公开资料会对其他用户展示；私密资料不会展示。你可以隐藏公开资料，管理员可以删除违规公开资料。</p>
+
+  <h2>4. AI 与图片生成</h2>
+  <p>AI 续写、润色、一致性检测和图片生成由你自行配置的第三方接口提供。只有你主动执行这些功能时，所选上下文、提示词或图片描述才会发送到对应服务商。</p>
+  <p>你的 API Key 保存在本机，不会写入作品文件，也不会由墨引统一代管。第三方服务商如何处理请求，适用其各自的隐私政策。</p>
+
+  <h2>5. 跨设备一次性传输</h2>
+  <p>跨设备传输用于把书架临时搬到另一台电脑：</p>
+  <ul>
+    <li>传输包在本地加密后上传，云端只保存密文、创建时间和过期时间</li>
+    <li>密钥 10 分钟内有效，只能领取一次</li>
+    <li>领取后云端立即删除密文</li>
+    <li>是否包含 API Key 由你勾选；默认不包含</li>
+    <li>目标电脑导入前会自动备份本机数据</li>
+  </ul>
+
+  <h2>6. 更新检查与基础网络请求</h2>
+  <p>墨引检查更新时会访问 GitHub / Gitee 的公开更新清单。该请求可能包含 IP 地址、应用版本和常规 HTTP 信息，用于返回最新版本；我们不在应用中建立用户画像。</p>
+
+  <h2>7. 我们不做的事</h2>
+  <ul>
+    <li>不出售你的个人信息</li>
+    <li>不把作品正文用于训练模型</li>
+    <li>不默认上传全部书架</li>
+    <li>不接入第三方广告 SDK 或行为分析 SDK</li>
+    <li>不读取与墨引功能无关的本机文件</li>
+  </ul>
+
+  <h2>8. 数据保存期限</h2>
+  <ul>
+    <li>本地作品：由你保留，直到你自行删除或卸载</li>
+    <li>账号资料：保留到你注销账号</li>
+    <li>公开资料：保留到你删除、管理员删除或账号注销</li>
+    <li>一次性传输：10 分钟过期，领取后立即删除</li>
+    <li>举报记录：用于处理违规内容，处理完成后按需保留</li>
+  </ul>
+
+  <h2>9. 你的权利</h2>
+  <p>你可以在应用内查看和修改昵称、头像等资料，删除公开资料，或注销账号。注销会删除账号、资料卡和公开资料；本机作品不会被远程删除。</p>
+  <p>你也可以通过上方邮箱请求访问、更正或删除相关数据。</p>
+
+  <h2>10. 数据存储地点</h2>
+  <p>账号、公共资料库和一次性传输使用 Supabase 云服务，服务器位于新加坡（ap-southeast-1）。这意味着相关数据可能在新加坡处理。AI 和图片请求由你选择的第三方服务商处理，其存储地点适用各自政策。</p>
+
+  <h2>11. 安全</h2>
+  <p>我们使用 Supabase 行级安全（RLS）、传输加密、一次性密钥和最小权限原则保护云端数据。但任何网络服务都无法保证绝对安全；请妥善保管账号密码和本机 API Key。</p>
+
+  <h2>12. 未成年人</h2>
+  <p>墨引面向成年写作者。未满 14 周岁的未成年人不应在未取得监护人同意的情况下注册账号或发布公开资料。</p>
+
+  <h2>13. 政策更新</h2>
+  <p>政策发生重大变化时，我们会在应用内或本页面更新生效日期。继续使用即表示你接受更新后的政策。</p>
+
+  <h2>14. 联系我们</h2>
+  <p>墨引开发团队<br>邮箱：<a href="mailto:1401298115@qq.com">1401298115@qq.com</a></p>
+
+  <footer>© 2026 墨引开发团队 · 本页面为墨引 Microsoft Store 隐私政策页面。</footer>
+</div>
+</body>
+</html>
