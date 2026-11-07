@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080a0c">
+<meta name="robots" content="index,follow">
+<title>墨引 Web · 本地优先的长篇写作</title>
+<meta name="description" content="墨引 Web Lite：在浏览器里写长篇。作品保存在本机浏览器，支持卷章、导入导出和可选 AI。功能不完整，推荐使用 Windows 桌面版。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://moyitech.top" aria-label="返回昩晹科技">
+    <span class="brand-mark">墨</span>
+    <span class="brand-name">墨引 <small>WEB LITE</small></span>
+  </a>
+  <nav class="top-nav" aria-label="产品导航">
+    <a href="https://moyitech.top" target="_blank" rel="noopener">工作室</a>
+    <a href="https://moyitech.top/#works" target="_blank" rel="noopener">桌面版</a>
+    <a class="top-cta" href="https://apps.microsoft.com/detail/9P5GRZ5X1S4Q" target="_blank" rel="noopener">下载 Windows 客户端 <span>↗</span></a>
+  </nav>
+</header>
+
+<div class="notice">
+  <span class="notice-mark">!</span>
+  <p><strong>网页版是精简版。</strong> 不含跨设备传输、完整备份、DOCX 导入；AI 受浏览器 CORS 限制。写长篇推荐使用 Windows 桌面版。</p>
+  <a href="https://gitee.com/AI-moyin/let-writing-be-your-guide/releases" target="_blank" rel="noopener">下载桌面版</a>
+</div>
+
+<main class="app">
+  <aside class="sidebar">
+    <div class="side-head">
+      <div>
+        <p class="micro">WORKSPACE</p>
+        <h1>我的书架</h1>
+      </div>
+      <button class="icon-btn" type="button" data-action="new" title="新建作品" aria-label="新建作品">＋</button>
+    </div>
+    <div class="side-actions">
+      <button class="btn btn-primary btn-sm" type="button" data-action="new">新建作品</button>
+      <button class="btn btn-ghost btn-sm" type="button" data-action="import">导入</button>
+    </div>
+    <div class="project-list" id="project-list" aria-live="polite"></div>
+    <div class="side-foot">
+      <span><i class="dot"></i> 数据仅保存在此浏览器</span>
+      <a class="text-btn" href="./privacy.html">隐私政策</a>
+      <button type="button" class="text-btn" data-action="ai-settings">AI 设置</button>
+    </div>
+  </aside>
+
+  <section class="view" id="view" aria-live="polite"></section>
+</main>
+
+<input type="file" id="file-input" accept=".json,.txt,.md,.markdown,application/json,text/plain" hidden />
+<div id="modal-root"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
